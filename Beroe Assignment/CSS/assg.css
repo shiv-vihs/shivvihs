@@ -2,7 +2,8 @@ body, html {
   height: 100%;
   background-color: #e7e7e7;
   line-height: 2.0;
-  
+  width: 100%;
+  overflow-x: hidden;
 }
 html
 {box-sizing:border-box;}
@@ -174,8 +175,8 @@ body
 
 .Bitmap-Copy-2 {
   
-  width: 582px;
-  height: 353px;
+  width: 42%;
+  min-height: 77%;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: inset 0 1px 13px 0 rgba(0, 0, 0, 0.3);
   background-color: #d8d8d8;
@@ -185,8 +186,8 @@ body
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 411px;
-  height: 248px;
+  width: 70%;
+  min-height: 70%;
   opacity: 0.96;
   background-color: #ffffff;
 }
@@ -245,14 +246,14 @@ body
 
 .pos-2{
   position:absolute;
-  top:264px;
-  left:40px;
+  top:58%;
+  left:3%;
 }
 
 .pos-3{
   position: absolute;
-  top: 264px;
-  left:658px;
+  top: 58%;
+  left:49%;
 }
 
 .flex-container{
@@ -268,6 +269,7 @@ body
 .flex-container-main{
   display: flex;
   justify-content: space-around; 
+  margin-top: 217px;
   
 }
 
@@ -481,5 +483,8 @@ a:hover {
  }
  .Bitmap-Copy-2{
    display: none;
+ }
+ .flex-container-main{
+   margin-top: 100px;
  }
 }
