@@ -4,26 +4,40 @@
 <title>Assignment-webpage-development</title>
 <link rel="stylesheet" href="CSS/assg.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
   <!--NAVBAR-->
-  <ul class="first-nav decoration flex-container-nav justify-content-space-btw">
-    <div class="flex-container-nav" >
-      <li class="hamburger" ><a href="javascript:void(0);" onclick="myFunctionHamburger()" style="height: 54px;"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-      <li ><img src="Images/beroelive.JPG" height="54px" width="auto"></li>
+  <ul class="first-nav decoration flex-container-nav justify-content-space-btw" style="position:relative;">
+    <div class="flex-container-nav">
+      <li class="hamburger "><a href="javascript:void(0);"
+          class="display-flex justify-content-center align-items-center padding-8-6" onclick="myFunctionHamburger()"
+          style="height: 54px;"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+      <li><img src="Images/beroeliven.JPG" class="logo" height="54px" width="auto"></li>
     </div>
-    <div class="flex-container-nav  ">
-    
-    <input type="search" id="search" placeholder="Search" style="height:54px; width: 100%;">
-    <a href="javascript:void(0);" style="width: 30px;padding: 8px 6px; text-align: center;" onclick="myFunctionSearch()"><i class="fa fa-search" aria-hidden="true"></i></a> 
-    <a href="#notification" style="width: 50px; white-space: nowrap; padding: 8px 6px; text-align: center; "><i class="fa fa-bell-o" aria-hidden="true" > </i></a>
-    <a href="#loginstatus" class="name" style="width: 100px;white-space: nowrap; padding: 8px 6px; text-align: center;"><i class="fa fa-circle-o" aria-hidden="true" > <span style="font-family: Titillium;"> Hi John!</span></i></a>
-    <a href="#ask" style="width: 100px; white-space: nowrap; padding: 8px 6px;"><i class="fa fa-question-circle-o" aria-hidden="true"><span style="font-family: Titillium;"> Ask Beroe</span></i></a>
+    <div class="flex-container-nav" style="margin-right: 40px;">
+      <div class="search-magnify">
+        <input type="search" id="search" placeholder="Search" style="height:54px; width: 100%;">
+
+        <a href="javascript:void(0);" class="magnify" style="width: 30px;padding: 8px 6px; text-align: center;"
+          onclick="myFunctionSearch()"><i class="fa fa-search" aria-hidden="true"></i></a>
+      </div>
+      <a href="#notification" class="display-flex justify-content-center align-items-center notif"
+        style="width: 30px; white-space: nowrap; text-align: center; "><i class="fa fa-bell-o" aria-hidden="true">
+        </i></a>
+      <a href="#loginstatus" class="name display-flex justify-content-center align-items-center"><i
+          class="fa fa-circle-o" aria-hidden="true">
+          <span style="font-family: Titillium;"> Hi John!</span></i></a>
+
+      <a href="#ask" class="ask display-flex justify-content-center align-items-center"><i
+          class="fa fa-question-circle-o" aria-hidden="true"><span class="askberoe" style="font-family: Titillium;"> Ask
+            Beroe</span></i></a>
     </div>
-    
+
   </ul>
 
+
   <div id="myLinks" style="text-align: center;">
-    <a href="#loginstatus"class="color-hamburger">Hi John!</a>
+    <a href="#loginstatus" class="color-hamburger">Hi John!</a>
     <a href="#dashboard" class="color-hamburger">Dashboard</a>
     <a href="#instructions" class="color-hamburger">Instructions</a>
     <a href="#interestingreads" class="color-hamburger">Interesting Reads</a>
@@ -32,474 +46,731 @@
   </div>
 
   <ul class="second-nav decoration flex-container-nav justify-content-space-btw">
-    <div class="flex-container-nav">
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href="#instructions">Instructions</a></li>
-    <li><a href="#interestingreads">Interesting Reads</a></li>
-    <li><a href="#about">About</a></li>
+    <div class="flex-container-nav" style="margin-left: 24px">
+      <li><a class="padding-8-6" id="dashboard" href="#dashb">Dashboard</a></li>
+      <li><a class="padding-8-6" id="ins" href="#instructions">Instructions</a></li>
+      <li><a class="padding-8-6" id="int" href="#interestingreads">Interesting Reads</a></li>
+      <li><a class="padding-8-6" id="ab" href="#about">About</a></li>
     </div>
-    <li><a href="#dashboard">Customized Reports</a></li>
+    <li style="margin-right:40px"><a class="padding-8-6" id="cust" href="#customized">Customized Reports</a></li>
   </ul>
 
-<div class=" display-container padding-64" style= "height:457px;width:auto;background-color:#534D96;">
-  <div class="container content flex-container align-items-center justify-content-flex-start">
-    <div class=" INTERESTING-READS">
-      INTERESTING READS
+  <div class=" display-container padding-64" style="height:457px;width:auto;background-color:#534D96;width: 100%;">
+    <div class="container content flex-container align-items-center justify-content-flex-start">
+      <div class=" INTERESTING-READS">
+        INTERESTING READS
+      </div>
+
+      <div class="margin-left Line-Copy-1"></div>
+    </div>
+    <div class=" Commercial-Reminde container content "> <span> Commercial & Reminder Items, Technology, Category 2
+      </span>
+      <div class="container content right"><a><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="more content container"><span>+5 more</span></div>
+
+    <div class="container-scroll flex">
+
+      <div class="building Bitmap-Copy-2 flex-item">
+        <span class="heading-card">BLOG</span>
+        <div class="Rectangle-24 opacity-min">
+          <div class="card-heading margin-top margin-left margin-bottom"><b>MARKETING MATERIALS</b></div>
+          <div class="La-Nina-to-have-a-po margin-left margin-bottom"> La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript">
+            <div class="margin-left margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript">2nd Aug 2016</div>
+          </div>
+          <div class="Lorem-ipsum-dolor-si margin-left margin-right margin-bottom">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque congue dapibus
+            elemgfdfyfdggdgdgfsgfsgfstrsrdtdytdy</div>
+          <div class="flex-container align-items-center subscript margin-right-subscript">
+            <i class="fa fa-commenting-o margin-left margin-right-subscript" aria-hidden="true"><span
+                style="font-family: Opensans;"> 15 K</span></i>
+
+            <div class="star margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                  style="font-family: Opensans;"> 5</span></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="building Bitmap-Copy-2 flex-item">
+        <span class="heading-card">WHITEPAPERS</span>
+        <div class="Rectangle-24 opacity-min">
+          <div class="card-heading margin-top margin-left margin-bottom"><b>MARKETING MATERIALS</b></div>
+          <div class="La-Nina-to-have-a-po margin-left margin-bottom"> La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript">
+            <div class="margin-left margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript">2nd Aug 2016</div>
+          </div>
+          <div class="Lorem-ipsum-dolor-si margin-left margin-right margin-bottom">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque congue dapibus
+            elemgfdfyfdggdgdgfsgfsgfstrsrdtdytdy</div>
+          <div class="flex-container align-items-center subscript margin-right-subscript">
+            <i class="fa fa-commenting-o margin-left margin-right-subscript" aria-hidden="true"><span
+                style="font-family: Opensans;"> 15 K</span></i>
+
+            <div class="star margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                  style="font-family: Opensans;"> 5</span></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="building Bitmap-Copy-2 opacity-min flex-item">
+        <span class="heading-card">ARTICLES</span>
+        <div class="Rectangle-24">
+          <div class="card-heading margin-top margin-left margin-bottom"><b>MARKETING MATERIALS</b></div>
+          <div class="La-Nina-to-have-a-po margin-left margin-bottom"> La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript">
+            <div class="margin-left margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript">2nd Aug 2016</div>
+          </div>
+          <div class="Lorem-ipsum-dolor-si margin-left margin-right margin-bottom">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque congue dapibus
+            elemgfdfyfdggdgdgfsgfsgfstrsrdtdytdy</div>
+          <div class="flex-container align-items-center subscript margin-right-subscript">
+            <i class="fa fa-commenting-o margin-left margin-right-subscript" aria-hidden="true"><span
+                style="font-family: Opensans;"> 15 K</span></i>
+
+            <div class="star margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                  style="font-family: Opensans;"> 5</span></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="margin-left Line-Copy-1" ></div>
-</div>
-<div class=" Commercial-Reminde container content "> <span > Commercial & Reminder Items, Technology, Category 2 </span>
-  <div class="container content right"><a><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></div>
-</div>
-<div class="more content container"><span>+5 more</span></div>
-<div class="building Bitmap-Copy-2 pos-2 opacity-min">
-  <span class="heading-card" >BLOG</span>
-  <div class="Rectangle-24">
-    <div class="card-heading margin-top margin-left margin-bottom"><b>MARKETING MATERIALS</b></div>
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom"><b> La Nina to have a positive impact on key Indian crop.</b></div>
-    <div class="flex-container align-items-center subscript">
-      <div class="margin-left"  >Sunil Shah</div>
-      <div class="separation margin-left margin-right"  ></div>
-      <div class="" >2nd Aug 2016</div>
+
+  </div>
+  <!--body div-->
+  <div class="flex-container-main justify-content-space-around align-items-flex-start" style="background-color: white;">
+    <!--left side content-->
+    <!--blogs-->
+    <div class="main-div  flex-container flex-direction-column">
+      <!--Blog heading-->
+      <div class="content-heading flex-container align-items-center padding justify-content-flex-start">
+        <div class="heading">
+          BLOG
+        </div>
+
+        <div class=" margin-left Line-Copy-2"></div>
+      </div>
+      <!--row 1-->
+      <div class=" flex-container padding rows">
+        <div class="building margin-24 margin-0"></div>
+        <div class="Rectangle margin-24">
+
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+          </div>
+          <div class="Lorem-main margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+      <!--row 2-->
+      <div class=" flex-container padding rows">
+        <div class="margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+      <!--row 3-->
+      <div class=" flex-container padding rows">
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+
+
+      <div><a href="#" class="more-items margin-24 padding margin-0">More ></a></div>
+      <div class="white-space"></div>
+      <!--ARTICLES-->
+      <div class="content-heading flex-container align-items-center padding justify-content-flex-start ">
+        <div class="heading">
+          ARTICLES
+        </div>
+
+        <div class="margin-left Line-Copy-2"></div>
+      </div>
+      <!--row 1-->
+      <div class=" flex-container padding rows">
+        <div class="building margin-24 margin-0"></div>
+        <div class="Rectangle  margin-24">
+
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+
+          </div>
+          <div class="Lorem-main margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+      <!--row 2-->
+      <div class=" flex-container padding rows">
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+      <!--row 3-->
+      <div class=" flex-container padding rows">
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class="margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+
+
+      <a href="#" class="more-items margin-24 padding margin-0">More ></a>
+      <div class="white-space"></div>
+
+      <!--WHITEPAPERS-->
+      <div class=" content-heading flex-container align-items-center padding justify-content-flex-start">
+        <div class="heading">
+          WHITEPAPERS
+        </div>
+
+        <div class="margin-left Line-Copy-2 "></div>
+      </div>
+
+      <!--row 1-->
+
+      <div class=" flex-container padding rows">
+        <div class="building margin-24 margin-0 border-green" style="position: relative;">
+          <a href="javascript:void(0);" class="spon-cont-banner tooltip"
+            onclick="myFunctionSponsoredContent()">SPONSORED CONTENT<span class="tooltiptext">Click to reveal sponsored
+              content after the whitepapers section</span></a>
+        </div>
+        <div class="Rectangle margin-24">
+
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+      <!--row 2-->
+      <div class=" flex-container padding rows">
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+      <!--row 3-->
+      <div class=" flex-container padding rows">
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+        <div class=" margin-24" style="width:auto; height: auto;">
+          <div class=" building" style="width:auto;height: 203px;"></div>
+          <div class="La-Nina-to-have-a-po-main margin-bottom">La Nina to have a positive impact on key Indian
+            crop.</div>
+          <div class="flex-container align-items-center subscript-main">
+            <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+            <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+            <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+                aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+            <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star"
+                aria-hidden="true"><span style="font-family: Opensans;"> 5</span></i></div>
+
+            <div class="download display-flex justify-content-center align-items-center margin-left-subscript"><a
+                href="#" class="download-button"><i class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"
+                  style="color: #5d52a8;"></i></a>
+            </div>
+          </div>
+          <div class="Lorem-main-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        </div>
+      </div>
+
+
+      <div><a href="#" class="more-items margin-24 padding margin-0">More ></a></div>
+
+
+      <div class="white-space"></div>
+
+
     </div>
-    <div class="Lorem-ipsum-dolor-si margin-left margin-right margin-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque congue dapibus elemgfdfyfdggdgdgfsgfsgfstrsrdtdytdy</div>
-      <div class="flex-container align-items-center subscript">
-      <i class="fa fa-commenting-o" aria-hidden="true" style="margin-left: 5%;">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      </div>
-  </div>
-  
-</div>
+    <!--sponsored div-->
+    <div id="sponsored-div">
+      <div class="sponsored-content-banner center" style="width: auto;height: auto;">SPONSORED CONTENT</div>
+      <div class="" style="width:100%; height: auto;">
+        <div class=" building" style="width:100%;height: 203px;"></div>
+        <div class="margin-left" style="color: #5d52a8;"><b>BLOG</b></div>
+        <div class="La-Nina-to-have-a-po-main margin-left margin-bottom">La Nina to have a positive impact on key Indian
+          crop.</div>
+        <div class="flex-container align-items-center subscript margin-left">
+          <div class="name-subscript margin-right-subscript">Sunil Shah</div>
 
-<div class="building Bitmap-Copy-2 pos-3 opacity-min">
-  <span class="heading-card" >ARTICLE</span>
-  <div class="Rectangle-24">
-    <div class="card-heading margin-top margin-left margin-bottom">MARKETING MATERIALS</div>
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="margin-left"  >Sunil Shah</div>
-      <div class="separation margin-left margin-right"  ></div>
-      <div class="" >2nd Aug 2016</div>
+          <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+          <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+              aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+          <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                style="font-family: Opensans;"> 5</span></i></div>
+        </div>
+
+      </div>
+
+
+      <div class="margin-top " style="width:100%; height: auto;">
+        <div class=" building" style="width:100%;height: 203px;"></div>
+        <div class="margin-left" style="color: #5d52a8;"><b>BLOG</b></div>
+        <div class="La-Nina-to-have-a-po-main margin-left margin-bottom">La Nina to have a positive impact on key Indian
+          crop.</div>
+        <div class="flex-container align-items-center subscript margin-left">
+          <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+          <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+          <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+              aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+          <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                style="font-family: Opensans;"> 5</span></i></div>
+        </div>
+
+      </div>
+      <div class="margin-top " style="width:100%; height: auto;">
+        <div class=" building" style="width:100%;height: 203px;"></div>
+        <div class="margin-left" style="color: #5d52a8;"><b>ARTICLE</b></div>
+        <div class="La-Nina-to-have-a-po-main margin-left margin-bottom">La Nina to have a positive impact on key Indian
+          crop.</div>
+        <div class="flex-container align-items-center subscript margin-left">
+          <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+          <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+          <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+              aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+          <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                style="font-family: Opensans;"> 5</span></i></div>
+        </div>
+
+      </div>
+      <div class="margin-top " style="width:100%; height: auto;">
+        <div class=" building" style="width:100%;height: 203px;"></div>
+        <div class="margin-left" style="color: #5d52a8;"><b>ARTICLE</b></div>
+        <div class="La-Nina-to-have-a-po-main margin-left margin-bottom">La Nina to have a positive impact on key Indian
+          crop.</div>
+        <div class="flex-container align-items-center subscript margin-left">
+          <div class="name-subscript margin-right-subscript">Sunil Shah</div>
+
+          <div class="date margin-left-subscript margin-right-subscript">2nd Aug 2016</div>
+          <div class="comment margin-left-subscript margin-right-subscript"><i class="fa fa-commenting-o "
+              aria-hidden="true"><span style="font-family: Opensans;"> 15 K</span></i></div>
+
+          <div class="star margin-right-subscript margin-left-subscript"><i class="fa fa-star" aria-hidden="true"><span
+                style="font-family: Opensans;"> 5</span></i></div>
+        </div>
+
+      </div>
     </div>
-    <div class="Lorem-ipsum-dolor-si margin-left margin-right margin-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque congue dapibus elemgfdfyfdggdgdgfsgfsgfstrsrdtdytdy</div>
-    <div class="flex-container align-items-center subscript">
-      <i class="fa fa-commenting-o" aria-hidden="true" style="margin-left: 5%;">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      </div>
-  </div>
-  
-</div>
-
-</div>
-<!--body div-->
-<div class="flex-container-main  justify-content-space-around align-items-flex-start" style="background-color: white;"> 
-  <!--left side content-->
-  <!--blogs-->
-  <div class="main-div  flex-container flex-direction-column" >
-  <!--Blog heading-->
-  <div class="content-heading flex-container align-items-center padding justify-content-flex-start" style="margin-left: 18px;margin-top: 18px;">
-    <div class="heading">
-      BLOG
-    </div>
-
-  <div class=" margin-left Line-Copy-2" ></div>
-  </div>
-  <!--row 1-->
-  <div class=" flex-container padding" >
-  <div class="building margin"  ></div>  
-  <div class="Rectangle margin" >
-    
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-  </div>
-    <div class="Lorem-main margin-left margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-  </div>
-  </div>
-  <!--row 2-->
-  <div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-  </div>
-    
-</div> 
-</div>
-
-<!--row 3-->
-<div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-  </div>
-    
-</div> 
-</div>
-
-
-
-<div><a href="#" class="margin" style="color: #5d52a8;">More ></a></div>
-<!--ARTICLES-->
-<div class="content-heading flex-container align-items-center padding justify-content-flex-start " style="margin-left: 18px;margin-top: 18px;">
-  <div class="heading">
-    ARTICLES
-</div>
-
-<div class="margin-left Line-Copy-2" ></div>
-</div>
-<!--row 1-->
-<div class=" flex-container padding" >
-  <div class="building  margin"></div>  
-  <div class="Rectangle  margin">
-    
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-      
-  </div>
-    <div class="Lorem-main margin-left margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-  </div>
-</div>
-<!--row 2-->
-<div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-          
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-  </div>
-    
-</div> 
-</div>
-
-<!--row 3-->
-<div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-  </div>
-    
-</div> 
-</div>
-
-
-
-<div><a href="#" class="margin" style="color: #5d52a8;">More ></a></div>
-
-<!--WHITEPAPERS-->
-<div class="content-heading flex-container align-items-center padding justify-content-flex-start" style="margin-left: 18px; margin-top: 18px;">
-  <div class="heading">
-    WHITEPAPERS
-</div>
-
-<div class="margin-left Line-Copy-2 " ></div>
-</div>
-<!--row 1-->
-<div class=" flex-container padding " >
-  <div class="building  margin"></div>  
-  <div class="Rectangle  margin">
-    
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-  </div>
-    <div class="Lorem-main margin-left margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-  </div>
-</div>
-<!--row 2-->
-<div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-  </div>
-    
-</div> 
-</div>
-
-<!--row 3-->
-<div class=" flex-container padding" >
-  <div class=" margin" style="width:auto; height: auto;">
-        <div class=" building" style="width:auto;height: 203px;"></div> 
-        <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-        <div class="flex-container align-items-center subscript">
-          <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-          <div class="separation"  ></div>
-          <div class="" >2nd Aug 2016</div>
-          <div class="separation"  ></div>
-          <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-star" aria-hidden="true">5</i>
-          <div class="separation"  ></div>
-          <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-      </div>
-        
-  </div> 
-  <div class=" margin" style="width:auto; height: auto;">
-    <div class=" building" style="width:auto;height: 203px;"></div> 
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-      <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-      <div class="separation"  ></div>
-      <div class="" >2nd Aug 2016</div>
-      <div class="separation"  ></div>
-      <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-star" aria-hidden="true">5</i>
-      <div class="separation"  ></div>
-      <i class="fa fa-arrow-circle-o-down" aria-hidden="true" style="color: #5d52a8;"></i>
-  </div>
-    
-</div> 
-</div>
-
-
-<div><a href="#" class="margin" style="color: #5d52a8;">More ></a></div>
-
-<div class="whitepapers"></div>
-
-
-
-</div>
-<!--sponsored div-->
-<div class=" sponsored-div" >
-  <div class="sponsored-content-banner center" style="width: auto;height: auto;">SPONSORED CONTENT</div>
-  <div class="" style="width:100%; height: auto;">
-    <div class=" building" style="width:100%;height: 203px;"></div> 
-    <div class="margin-left" style="color: #5d52a8;"><b>BLOG</b></div>
-    <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-    <div class="flex-container align-items-center subscript">
-        <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-        <div class="separation"  ></div>
-        <div class="" >2nd Aug 2016</div>
-        <div class="separation"  ></div>
-        <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-        <div class="separation"  ></div>
-        <i class="fa fa-star" aria-hidden="true">5</i>
-    </div>
-    
   </div>
 
 
-<div class=" " style="width:100%; height: auto;">
-  <div class=" building" style="width:100%;height: 203px;"></div> 
-  <div class="margin-left" style="color: #5d52a8;"><b>BLOG</b></div>
-  <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-  <div class="flex-container align-items-center subscript">
-    <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-    <div class="separation"  ></div>
-    <div class="" >2nd Aug 2016</div>
-    <div class="separation"  ></div>
-    <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-    <div class="separation"  ></div>
-    <i class="fa fa-star" aria-hidden="true">5</i>
-</div>
-  
-</div>
-<div class=" " style="width:100%; height: auto;">
-  <div class=" building" style="width:100%;height: 203px;"></div> 
-  <div class="margin-left" style="color: #5d52a8;"><b>ARTICLE</b></div>
-  <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-  <div class="flex-container align-items-center subscript">
-    <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-    <div class="separation"  ></div>
-    <div class="" >2nd Aug 2016</div>
-    <div class="separation"  ></div>
-    <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-    <div class="separation"  ></div>
-    <i class="fa fa-star" aria-hidden="true">5</i>
-</div>
-  
-</div>
-<div class=" " style="width:100%; height: auto;">
-  <div class=" building" style="width:100%;height: 203px;"></div> 
-  <div class="margin-left" style="color: #5d52a8;"><b>ARTICLE</b></div>
-  <div class="La-Nina-to-have-a-po margin-left margin-bottom">La Nina to have a positive impact on key Indian crop.</div>
-  <div class="flex-container align-items-center subscript">
-    <div class="" style="margin-left: 3.2%;"  ><span>Sunil Shah</span></div>
-    <div class="separation"  ></div>
-    <div class="" >2nd Aug 2016</div>
-    <div class="separation"  ></div>
-    <i class="fa fa-commenting-o" aria-hidden="true">15K</i>
-    <div class="separation"  ></div>
-    <i class="fa fa-star" aria-hidden="true">5</i>
-</div>
-  
-</div>
-</div>
-</div>
+
+  <footer class="center opacity-min " style="background-color: #534D96;height: 30px;">
 
 
+  </footer>
 
-<footer class="center opacity-min " style="background-color: #534D96;height: 30px;">
-  
-  
-</footer>
- 
-<script>
-  function myFunctionHamburger() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+  <script>
+    function myFunctionHamburger() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
     }
-  }
 
-  function myFunctionSearch() {
-    var x = document.getElementById("search");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+    function myFunctionSearch() {
+      var x = document.getElementById("search");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+
+      } else {
+        x.style.display = "block";
+
+      }
     }
-  }
+    function myFunctionSponsoredContent() {
+      var x = document.getElementById("sponsored-div");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+
+      } else {
+        x.style.display = "block";
+
+      }
+    }
+    function colorSustain() {
+      document.getElementById("dashboard").style.backgroundColor = "#473D8E";
+    }
   </script>
 
+
+
 </body>
+
 </html>
